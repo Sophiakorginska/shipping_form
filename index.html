@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Shipping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="main-content">
+    <section class="filling-form">
+        <h1>Fill in the form</h1>
+        <form class="filling-form-content">
+            <div class="filling-form-item left-part">
+                <div class="ff-group first-part">
+                    <div class="ff-group-item separated">
+                        <label for="first-name">Name</label>
+                        <input name="first-name" id="first-name" type="text">
+                    </div>
+                    <div class="ff-group-item separated">
+                        <label for="surname">Surname</label>
+                        <input name="surname" id="surname" type="text">
+                    </div>
+                </div>
+                <div class="ff-group">
+                    <div class="ff-group-item first-part">
+                        <label for="company-name">Company name</label>
+                        <input name="company-name" id="company-name" type="text">
+                    </div>
+                    <button class="second-part"> + Add logo</button>
+                </div>
+                <div class="first-part">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email">
+                </div>
+                <div class="first-part">
+                    <label for="phone-number">Phone number</label>
+                    <input name="phone-number" id="phone-number" type="tel">
+                </div>
+            </div>
+
+            <div class="filling-form-item right-part">
+                <div>
+                    <label for="country">Country</label>
+                    <select name="country" id="country" required>
+                        <option></option>
+                        <option>Austria</option>
+                        <option>Georgia</option>
+                        <option>Ukraine</option>
+                        <option>Zimbabwe</option>
+                    </select>
+                </div>
+                <div class="ff-group">
+                    <div class="ff-group-item separated">
+                        <label for="city">City</label>
+                        <input name="city" id="city" type="text">
+                    </div>
+                    <div class="ff-group-item separated">
+                        <label for="postal-code">Postal code</label>
+                        <input name="postal-code" id="postal-code" type="text">
+                    </div>
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <input name="address" id="address" type="text">
+                </div>
+                <div class="checkbox">
+                    <label for="acceptance"></label>
+                    <input type="checkbox" id="acceptance" name="acceptance"> I
+                    accept Terms and Service
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="shipping-details">
+        <h1>Shipping & billing details</h1>
+        <p>You can change the shipping method</p>
+        <form class="shipping-details-content">
+            <div class="main-container">
+                <div class="shipping-details-container">
+                    <div class="shipping-method-content">
+                        <div class="sm-item unable">
+                            <div class="sm-logo"><img src="images/shipped%20(1).png"></div>
+                            <div class="sm-text">
+                                <h4>Standard</h4>
+                                <p>5$ in 10 days</p>
+                            </div>
+                        </div>
+                        <div class="sm-item">
+                            <div class="sm-logo"><img src="images/airplane.png"></div>
+                            <div class="sm-text">
+                                <h4>Express</h4>
+                                <p>25$ in 5 days</p>
+                            </div>
+                        </div>
+                        <div class="sm-item unable">
+                            <div class="sm-logo"><img src="images/startup.png"></div>
+                            <div class="sm-text">
+                                <h4>Premium</h4>
+                                <p>50$ for tomorrow</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speech-bubble">
+                        <div class="payment-method-content">
+                            <div class="pm-group">
+                                <div>
+                                    <p>Payment method</p>
+                                    <div class="pm-group-item">
+                                        <div class="pm-logo-box"><img src="images/american-express-logo.png"></div>
+                                        <div class="pm-logo-box"><img src="images/Mastercard-logo.png"></div>
+                                        <div class="pm-logo-box"><img src="images/visa-pay-logo.png"></div>
+                                        <div class="pm-logo-box"><img src="images/discover-logo-of-pay-system.png">
+                                        </div>
+                                    </div>
+                                    <div class="logo-box "><img src="images/paypal_gray.png"></div>
+                                    <div class="logo-box"><img src="images/jj.png" id="amazon-logo"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-details-content">
+                            <div class="cd-group">
+                                <p>Card details</p>
+                                <div class="card-example">
+                                    <label for="card-number-1">Card number</label>
+                                    <div class="cd-group-item">
+                                        <div class="cd-group-item-content">
+                                            <input name="card-number" id="card-number-1" type="text">
+                                        </div>
+                                        <div class="cd-group-item-content">
+                                            <label for="card-number-2"></label>
+                                            <input name="card-number" id="card-number-2" type="text">
+                                        </div>
+                                        <div class="cd-group-item-content">
+                                            <label for="card-number-3"></label>
+                                            <input name="card-number" id="card-number-3" type="text">
+                                        </div>
+                                        <div class="cd-group-item-content">
+                                            <label for="card-number-4"></label>
+                                            <input name="card-number" id="card-number-4" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="card-example-group">
+                                        <div class="expiration-date">
+                                            <label for="expiration-date">Expiration date</label>
+                                            <input name="expiration-date" id="expiration-date" type="date"
+                                                   value="2018-09-03">
+                                        </div>
+                                        <div class="cvc">
+                                            <label for="cvc/cvv">CVC/CVV</label>
+                                            <input name="cvc/cvv" id="cvc/cvv" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="SUBMIT" class=" pulse submit gradient">
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
+<footer></footer>
+
+</body>
+</html>
