@@ -329,9 +329,12 @@ button {
 }
 
 @media screen and (max-width: 1250px){
-    .pm-logo-box{
-        width: 100%;
+    .pm-logo-box img{
         box-sizing: border-box;
+        padding: 5px;
     }
 
+    .shipping-method-content{
+        margin-right: 7%;
+    }
 }
